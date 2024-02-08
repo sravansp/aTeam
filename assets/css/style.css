@@ -554,6 +554,7 @@ a {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: -webkit-fill-available;
 }
 
 
@@ -750,6 +751,10 @@ a {
 
 @media screen and (max-width: 900px) {}
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+    .home {
+        padding-left: 0;
+    }
+}
 
 /* =============Login Page CSS End=================  */
