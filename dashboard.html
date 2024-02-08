@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aTeam</title>
+    <link rel="stylesheet" href="./assets/pluggins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/pluggins/remixicon/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/util.css">
+
+</head>
+
+<body class="">
+    <div class="position-absolute top-0 left-0 w-full top_image">
+        <img class="w-full h-full object-cover" src="./assets/images/Big.svg" alt="top_img">
+    </div>
+    <!-- Sidebar Start -->
+    <div class="app-sidebar__overlay active" data-bs-toggle="sidebar"></div>
+    <nav class="sidebar close">
+        <div class="side_header d-flex justify-content-between align-items-center h-25px">
+            <div class="brand">
+                <img src="./assets/images/brand/Logo.png" alt="logo">
+            </div>
+            <div class="hamburger hov-pointer">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links ps-0">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class="ri-home-4-fill icon"></i>
+                            <span class="text nav-text">Home</span>
+                            <span class="tooltip">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-wallet-3-fill icon"></i>
+                            <span class="text nav-text">Wallet</span>
+                            <span class="tooltip">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-contacts-book-2-fill icon"></i>
+                            <span class="text nav-text">Booking</span>
+                            <span class="tooltip">Booking</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-briefcase-4-fill icon"></i>
+                            <span class="text nav-text">Business</span>
+                            <span class="tooltip">Business</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-earth-fill icon"></i>
+                            <span class="text nav-text">Explore</span>
+                            <span class="tooltip">Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-questionnaire-fill icon"></i>
+                            <span class="text nav-text">Support</span>
+                            <span class="tooltip">Support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content overflow-hidden">
+                <div class="w-170">
+                    <a href="#" class="bg-white rounded-5 d-flex justify-content-between p-2">
+                        <div class="flex gap-2">
+                            <div class="h-30 w-30 rounded-circle bc-icon flex-c-m">
+                                <i class="ri-medal-line text-white"></i>
+                            </div>
+                            <div class="flex-col">
+                                <p class="fs-11 fw-bolder text-black">Get Premium</p>
+                                <p class="fs-10 text-muted">$39/m</p>
+                            </div>
+                        </div>
+                        <i class="ri-eject-fill text-muted fs-16 rotate-90"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="h-130 pos-absolute bottom-0 left-0 w-full bottom-sibar-img">
+            <img class="object-center object-cover" src="./assets/images/Image.svg" alt="">
+        </div>
+    </nav>
+
+    <!-- Sidebar End  -->
+    <header>
+        <div class="navbar">
+            <div class="navbar_container"></div>
+        </div>
+    </header>
+
+    <div class="overlay_section"></div>
+    <main class="home">
+
+        <nav id="navbar_top" class="navbar navbar-fixed-top px-4">
+            <div class="container-fluid">
+                <div class="navbar_container navbar-menu-wrapper d-flex align-items-center">
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="content pe-4 pb-5">
+            <div class="container-fluid mt-5 px-md-0">
+                <ul class="nav nav-tabs animated-dash" id="myTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link flex-col-c-m gap-1 active" id="tab1-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                            <i class="ri-flight-takeoff-line fs-28"></i>
+                            <p class="fs-12 fw-bold text-uppercase">flights</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link flex-col-c-m gap-1" id="tab2-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                            <i class="ri-hotel-bed-fill fs-28"></i>
+                            <p class="fs-12 fw-bold text-uppercase">hotel</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link flex-col-c-m gap-1" id="tab3-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                            <i class="ri-ancient-pavilion-fill fs-28"></i>
+                            <p class="fs-12 fw-bold text-uppercase">villa</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link flex-col-c-m gap-1" id="tab4-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
+                            <i class="ri-taxi-fill fs-28"></i>
+                            <p class="fs-12 fw-bold text-uppercase">Taxi</p>
+                        </button>
+                    </li>
+                </ul>
+                <div class="row mt-3 animated-dash">
+                    <div class="col-12">
+                        <div class="wrapper_section p-3">
+                            <div class="tab-content" id="myTabsContent">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                                    aria-labelledby="tab1-tab">
+                                    <div class="flex-col gap-3">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> FROM</p>
+                                                    <p class="fs-16 fw-bolder">Dhaka, Bangladesh</p>
+                                                    <p class="fs-12 text-muted">Usmani airport, Sylhet</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> Check In- out</p>
+                                                    <p class="fs-16 fw-bolder">21 Aug'19</p>
+                                                    <p class="fs-12 text-muted">Sunday</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-group-fill"></i> TO</p>
+                                                    <p class="fs-16 fw-bolder">3 adult - 1 children - 2 room</p>
+                                                    <p class="fs-12 text-muted">Person</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> return</p>
+                                                    <p class="fs-16 fw-bolder">More</p>
+                                                    <p class="fs-12 text-muted"><i class="ri-more-fill"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 flex-m">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label fs-14 fw-semibold"
+                                                        for="flexCheckDefault">
+                                                        I’m travelling for work
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <button
+                                                    class="w-full h-full button-booking fs-18 fw-bolder text-uppercase text-white">
+                                                    search flight
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                    <div class="flex-col gap-3">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> FROM</p>
+                                                    <p class="fs-16 fw-bolder">Dhaka, Bangladesh</p>
+                                                    <p class="fs-12 text-muted">Usmani airport, Sylhet</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> Check In- out</p>
+                                                    <p class="fs-16 fw-bolder">21 Aug'19</p>
+                                                    <p class="fs-12 text-muted">Sunday</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-group-fill"></i> TO</p>
+                                                    <p class="fs-16 fw-bolder">3 adult - 1 children - 2 room</p>
+                                                    <p class="fs-12 text-muted">Person</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> return</p>
+                                                    <p class="fs-16 fw-bolder">More</p>
+                                                    <p class="fs-12 text-muted"><i class="ri-more-fill"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 flex-m">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label fs-14 fw-semibold"
+                                                        for="flexCheckDefault">
+                                                        I’m travelling for work
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <button
+                                                    class="w-full h-full button-booking fs-18 fw-bolder text-uppercase text-white">
+                                                    search hotel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                    <div class="flex-col gap-3">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> FROM</p>
+                                                    <p class="fs-16 fw-bolder">Dhaka, Bangladesh</p>
+                                                    <p class="fs-12 text-muted">Usmani airport, Sylhet</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> Check In- out</p>
+                                                    <p class="fs-16 fw-bolder">21 Aug'19</p>
+                                                    <p class="fs-12 text-muted">Sunday</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-group-fill"></i> TO</p>
+                                                    <p class="fs-16 fw-bolder">3 adult - 1 children - 2 room</p>
+                                                    <p class="fs-12 text-muted">Person</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> return</p>
+                                                    <p class="fs-16 fw-bolder">More</p>
+                                                    <p class="fs-12 text-muted"><i class="ri-more-fill"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 flex-m">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label fs-14 fw-semibold"
+                                                        for="flexCheckDefault">
+                                                        I’m travelling for work
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <button
+                                                    class="w-full h-full button-booking fs-18 fw-bolder text-uppercase text-white">
+                                                    search villa
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                                    <div class="flex-col gap-3">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> FROM</p>
+                                                    <p class="fs-16 fw-bolder">Dhaka, Bangladesh</p>
+                                                    <p class="fs-12 text-muted">Usmani airport, Sylhet</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> Check In- out</p>
+                                                    <p class="fs-16 fw-bolder">21 Aug'19</p>
+                                                    <p class="fs-12 text-muted">Sunday</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-group-fill"></i> TO</p>
+                                                    <p class="fs-16 fw-bolder">3 adult - 1 children - 2 room</p>
+                                                    <p class="fs-12 text-muted">Person</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="text-card flex-col p-3">
+                                                    <p class="fs-12 text-muted opacity-75 text-uppercase"><i
+                                                            class="ri-map-pin-2-fill"></i> return</p>
+                                                    <p class="fs-16 fw-bolder">More</p>
+                                                    <p class="fs-12 text-muted"><i class="ri-more-fill"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 flex-m">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label fs-14 fw-semibold"
+                                                        for="flexCheckDefault">
+                                                        I’m travelling for work
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <button
+                                                    class="w-full h-full button-booking fs-18 fw-bolder text-uppercase text-white">
+                                                    search taxi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 animated-dash">
+                    <div class="col-12">
+                        <div class="slider-section flex-col gap-4">
+                            <div class="row">
+                                <div class="flex justify-content-between">
+                                    <p class="title_div fs-24 fw-bolder">Trip Package</p>
+                                    <a href="" class="text-muted opacity-75 fs-18 fw-semibold">View All</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- Slider main container -->
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <div class="slidercard p-4 flex-col justify-content-between">
+                                                    <div class="sliderimg">
+                                                        <img class="w-full h-full object-center object-cover"
+                                                            src="./assets/images/slide1.webp" alt="">
+                                                    </div>
+
+                                                    <div class="flex-col text-white">
+                                                        <p class="fs-11 fw-normal text-uppercase">Start from </p>
+                                                        <p class="fs-24 fw-bolder">$599</p>
+                                                    </div>
+                                                    <div class="flex-m gap-3">
+                                                        <div class="rounded-circle w-40 h-40 overflow-hidden">
+                                                            <img class="w-full h-full object-center object-cover"
+                                                                src="./assets/images/slide1.webp" alt="">
+                                                        </div>
+                                                        <div class="text-white">
+                                                            <p class="fs-22 fw-bolder">Thailand</p>
+                                                            <p class="fs-16 fw-semibold textmuted opacity-75">Holidays
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slidercard p-4 flex-col justify-content-between">
+                                                    <div class="sliderimg">
+                                                        <img class="w-full h-full object-center object-cover"
+                                                            src="./assets/images/slide2.webp" alt="">
+                                                    </div>
+
+                                                    <div class="flex-col text-white">
+                                                        <p class="fs-11 fw-normal text-uppercase">Start from </p>
+                                                        <p class="fs-24 fw-bolder">$599</p>
+                                                    </div>
+                                                    <div class="flex-m gap-3">
+                                                        <div class="rounded-circle w-40 h-40 overflow-hidden">
+                                                            <img class="w-full h-full object-center object-cover"
+                                                                src="./assets/images/slide2.webp" alt="">
+                                                        </div>
+                                                        <div class="text-white">
+                                                            <p class="fs-22 fw-bolder">Thailand</p>
+                                                            <p class="fs-16 fw-semibold textmuted opacity-75">Holidays
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slidercard p-4 flex-col justify-content-between">
+                                                    <div class="sliderimg">
+                                                        <img class="w-full h-full object-center object-cover"
+                                                            src="./assets/images/slide3.webp" alt="">
+                                                    </div>
+
+                                                    <div class="flex-col text-white">
+                                                        <p class="fs-11 fw-normal text-uppercase">Start from </p>
+                                                        <p class="fs-24 fw-bolder">$599</p>
+                                                    </div>
+                                                    <div class="flex-m gap-3">
+                                                        <div class="rounded-circle w-40 h-40 overflow-hidden">
+                                                            <img class="w-full h-full object-center object-cover"
+                                                                src="./assets/images/slide3.webp" alt="">
+                                                        </div>
+                                                        <div class="text-white">
+                                                            <p class="fs-22 fw-bolder">Thailand</p>
+                                                            <p class="fs-16 fw-semibold textmuted opacity-75">Holidays
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slidercard p-4 flex-col justify-content-between">
+                                                    <div class="sliderimg">
+                                                        <img class="w-full h-full object-center object-cover"
+                                                            src="./assets/images/slide1.webp" alt="">
+                                                    </div>
+
+                                                    <div class="flex-col text-white">
+                                                        <p class="fs-11 fw-normal text-uppercase">Start from </p>
+                                                        <p class="fs-24 fw-bolder">$599</p>
+                                                    </div>
+                                                    <div class="flex-m gap-3">
+                                                        <div class="rounded-circle w-40 h-40 overflow-hidden">
+                                                            <img class="w-full h-full object-center object-cover"
+                                                                src="./assets/images/slide1.webp" alt="">
+                                                        </div>
+                                                        <div class="text-white">
+                                                            <p class="fs-22 fw-bolder">Thailand</p>
+                                                            <p class="fs-16 fw-semibold textmuted opacity-75">Holidays
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 animated-dash">
+                    <div class="col-12">
+                        <div class="wrapper_section px-5 py-4 flex-col gap-3">
+                            <div class="row">
+                                <div class="flex justify-content-between">
+                                    <p class="title_div fs-24 fw-bolder">Best Offer</p>
+                                    <a href="" class="text-muted opacity-75 fs-18 fw-semibold">View All</a>
+                                </div>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xxl-3">
+                                    <div class="boffer_card rounded-5 px-2 flex-m gap-3">
+                                        <div class="rounded-circle h-50px w-50px overflow-hidden">
+                                            <img src="./assets/images/villa1.png"
+                                                class="object-center object-cover w-full h-full" alt="">
+                                        </div>
+                                        <div class="flex-col-c">
+                                            <p class="fs-18 fw-bold">Alexandria</p>
+                                            <p class="fs-14 fw-normal text-muted">Best Hotel, villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 animated-dash">
+                    <div class="col-12">
+                        <div class="wrapper-bittom flex-col-c-sm flex-sb-m p-5">
+                            <img class="" src="./assets/images/Illustration.png" alt="">
+                            <div>
+                                <p class="fs-24 fw-bold text-white">Book Your Perfect Deals</p>
+                                <p><span class="text-warning fs-51 fw-bolder">$547</span> <span class="fs-16 fw-semibold text-warning">Starting at</span></p>
+                            </div>
+                            <button class="h-52 w-130 btn text-uppercase text-white fs-14 fw-bold bg-white bg-opacity-10">
+                                book now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    <script src="./assets/pluggins/jquery/jquery-3.6.3.min.js"></script>
+    <script src="./assets/pluggins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/pluggins/scrollreveal/scrollreveal.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+    <script>
+
+        var swiper2 = new Swiper(".swiper", {
+            // direction: "horizontal",
+            // slidesPerView: 1,
+            freeMode: true,
+            loop: false,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            // slidesOffsetAfter: 10,
+            // slidesOffsetBefore: 10,
+            autoHeight: true,
+            calculateHeight: true,
+            // centeredSlides: true,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // when window width is >= 1024
+                1024: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 40,
+                },
+            },
+            // mousewheel: {
+            //     releaseOnEdges: true,
+            // },
+
+
+        });
+    </script>
+
+</body>
+
+</html>
