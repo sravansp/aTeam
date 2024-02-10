@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aTeam</title>
+    <link rel="stylesheet" href="./assets/pluggins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/pluggins/remixicon/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/util.css">
+
+</head>
+
+<body class="">
+    <div class="position-absolute top-0 left-0 w-full top_image">
+        <img class="w-full h-full object-cover" src="./assets/images/Big.svg" alt="top_img">
+    </div>
+    <!-- Sidebar Start -->
+    <div class="app-sidebar__overlay active" data-bs-toggle="sidebar"></div>
+    <nav class="sidebar close">
+        <div class="side_header d-flex justify-content-between align-items-center h-25px">
+            <div class="brand">
+                <img src="./assets/images/brand/Logo.png" alt="logo">
+            </div>
+            <div class="hamburger hov-pointer">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links ps-0">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class="ri-home-4-fill icon"></i>
+                            <span class="text nav-text">Home</span>
+                            <span class="tooltip">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-wallet-3-fill icon"></i>
+                            <span class="text nav-text">Wallet</span>
+                            <span class="tooltip">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-contacts-book-2-fill icon"></i>
+                            <span class="text nav-text">Booking</span>
+                            <span class="tooltip">Booking</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-briefcase-4-fill icon"></i>
+                            <span class="text nav-text">Business</span>
+                            <span class="tooltip">Business</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-earth-fill icon"></i>
+                            <span class="text nav-text">Explore</span>
+                            <span class="tooltip">Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="ri-questionnaire-fill icon"></i>
+                            <span class="text nav-text">Support</span>
+                            <span class="tooltip">Support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content overflow-hidden">
+                <div class="w-170">
+                    <a href="#" class="bg-white rounded-5 d-flex justify-content-between p-2">
+                        <div class="flex gap-2">
+                            <div class="h-30 w-30 rounded-circle bc-icon flex-c-m">
+                                <i class="ri-medal-line text-white"></i>
+                            </div>
+                            <div class="flex-col">
+                                <p class="fs-11 fw-bolder text-black">Get Premium</p>
+                                <p class="fs-10 text-muted">$39/m</p>
+                            </div>
+                        </div>
+                        <i class="ri-eject-fill text-muted fs-16 rotate-90"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="h-130 pos-absolute bottom-0 left-0 w-full bottom-sibar-img">
+            <img class="object-center object-cover" src="./assets/images/Image.svg" alt="">
+        </div>
+    </nav>
+
+    <!-- Sidebar End  -->
+    <header>
+        <div class="navbar px-5">
+            <div class="navbar_container flex justify-content-end gap-4">
+                <div
+                    class="dropdown h-40 rounded-5 bg-white bg-opacity-10 flex justify-content-between align-items-center gap-3 p-2 blur">
+                    <div class="h-30 w-30 rounded-circle bg-white"></div>
+                    <p class="fs-12 fw-semibold text-white">Become a Partner</p>
+                    <i class="ri-arrow-down-s-line text-white"></i>
+                </div>
+                <div
+                    class="dropdown h-40 rounded-5 bg-white bg-opacity-10 flex justify-content-between align-items-center gap-3 p-2 blur">
+                    <div class="h-30 w-30 rounded-circle overflow-hidden">
+                        <img class="object-center object-cover w-full" src="./assets/images/user.png" alt="">
+                    </div>
+                    <p class="fs-12 fw-semibold text-white">Mansurul Haque</p>
+                    <i class="ri-arrow-down-s-line text-white"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay_section"></div>
+    <main class="home">
+
+
+
+        <div class="content pe-0 pe-md-4 pb-5">
+            <div class="container-fluid mt-5 px-md-0">
+                
+                <div class="row mt-5 animated-dash">
+                    <div class="col-12">
+                        <div class="wrapper_section px-5 py-4 flex-col gap-3">
+                            <div class="row g-4">
+                                <div class="col-md-2">
+                                    <div class="select-menu">
+                                        <p class="fs-11 ps-2 mb-1 text-muted text-opacity-75 text-uppercase">Where</p>
+                                        <div class="select-btn">
+                                          <span class="sBtn-text">Goa, India</span>
+                                          <i class="ri-arrow-down-s-line text-muted text-opacity-10"></i>
+                                        </div>
+                                      
+                                        <ul class="options">
+                                          <li class="option">
+                                            <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                                            <span class="option-text">Option 1</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                                            <span class="option-text">Option 2</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                                            <span class="option-text">Option 3</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                                            <span class="option-text">Option 4</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="select-menu">
+                                        <p class="fs-11 ps-2 mb-1 text-muted text-opacity-75 text-uppercase">Where</p>
+                                        <div class="select-btn">
+                                          <span class="sBtn-text">Goa, India</span>
+                                          <i class="ri-arrow-down-s-line text-muted text-opacity-10"></i>
+                                        </div>
+                                      
+                                        <ul class="options">
+                                          <li class="option">
+                                            <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                                            <span class="option-text">Option 1</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                                            <span class="option-text">Option 2</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                                            <span class="option-text">Option 3</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                                            <span class="option-text">Option 4</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="select-menu">
+                                        <p class="fs-11 ps-2 mb-1 text-muted text-opacity-75 text-uppercase">Where</p>
+                                        <div class="select-btn">
+                                          <span class="sBtn-text">Goa, India</span>
+                                          <i class="ri-arrow-down-s-line text-muted text-opacity-10"></i>
+                                        </div>
+                                      
+                                        <ul class="options">
+                                          <li class="option">
+                                            <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                                            <span class="option-text">Option 1</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                                            <span class="option-text">Option 2</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                                            <span class="option-text">Option 3</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                                            <span class="option-text">Option 4</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="select-menu">
+                                        <p class="fs-11 ps-2 mb-1 text-muted text-opacity-75 text-uppercase">Where</p>
+                                        <div class="select-btn">
+                                          <span class="sBtn-text">Goa, India</span>
+                                          <i class="ri-arrow-down-s-line text-muted text-opacity-10"></i>
+                                        </div>
+                                      
+                                        <ul class="options">
+                                          <li class="option">
+                                            <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                                            <span class="option-text">Option 1</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                                            <span class="option-text">Option 2</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                                            <span class="option-text">Option 3</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                                            <span class="option-text">Option 4</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="select-menu">
+                                        <p class="fs-11 ps-2 mb-1 text-muted text-opacity-75 text-uppercase">Where</p>
+                                        <div class="select-btn">
+                                          <span class="sBtn-text">Goa, India</span>
+                                          <i class="ri-arrow-down-s-line text-muted text-opacity-10"></i>
+                                        </div>
+                                      
+                                        <ul class="options">
+                                          <li class="option">
+                                            <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                                            <span class="option-text">Option 1</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                                            <span class="option-text">Option 2</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                                            <span class="option-text">Option 3</span>
+                                          </li>
+                                          <li class="option">
+                                            <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                                            <span class="option-text">Option 4</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                               <div class="col-md-2">
+                                <button class="btn btn-booking-search">
+                                    Search Flight
+                                </button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-8">
+
+                        
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </main>
+
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    <script src="./assets/pluggins/jquery/jquery-3.6.3.min.js"></script>
+    <script src="./assets/pluggins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/pluggins/scrollreveal/scrollreveal.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+   
+
+</body>
+
+</html>
